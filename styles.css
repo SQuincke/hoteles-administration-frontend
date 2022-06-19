@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hotel-btn {
+    font-size: 1rem;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+.not-display {
+    display: none !important;
+}
+
+.list-header {
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+    padding-left: 5.5em;
+    width: 700px;
+    box-sizing: content-box;
+}
+
+.list-header span {
+    width: 200px;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hotel-list li {
+    padding: 1em 3em;
+    width: 700px;
+    box-sizing: content-box;
+}
+
+.hotel-list li span {
+    width: 200px;
+    overflow: hidden;
+}
+
+.item-wrapper {
+    display: flex;
+    gap: 4rem;
+}

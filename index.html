@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Administración</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 class="main-title">Hotel Administración</h1>
+<button class="hotel-btn" onclick="fetchHotels()">Ver Hoteles</button>
+
+<div data-list-header class="list-header not-display">
+    <span>nombre</span>
+    <span>dirección</span>
+    <span>cantidad de habitaciones</span>
+</div>
+<ol data-hotel-list class="hotel-list"></ol>
+
+<template data-hotel-template>
+    <li data-hotel-item>
+        <div class="item-wrapper">
+            <span data-hotel-name></span>
+            <span data-hotel-address></span>
+            <span data-hotel-room-qty></span>
+        </div>
+    </li>
+</template>
+</body>
+</html>
